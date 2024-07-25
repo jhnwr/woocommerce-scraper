@@ -37,6 +37,6 @@ for link in links:
     time.sleep(1)
 
 with open('version1.csv', 'w', encoding='utf8', newline='') as f:
-    fc = csv.DictWriter(f, fieldnames=results[0].keys(),)
+    fc = csv.DictWriter(f, fieldnames=results[0].keys())
     fc.writeheader()
-    fc.writerows(results)%
+    fc.writerows(results)
